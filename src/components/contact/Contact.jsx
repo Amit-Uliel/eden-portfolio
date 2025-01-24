@@ -10,15 +10,33 @@ import {
     Text,
 } from '@mantine/core';
 import styles from './Contact.module.scss';
-import { sendEmailAction } from '@/app/actions/sendEmailAction';
+import { useSendEmail } from '@/hooks/useSendEmail';
 
 export default function Contact() {
+    const { sendEmail, isLoading, error, success } = useSendEmail();
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        const formData = new FormData(e.target);
+        await sendEmail(formData);
+    };
+
     return (
         <Container className={styles.contact}>
             <Title order={2} align="center" c="gray.2">
                 Let's Get In Touch
             </Title>
-            <form className={styles.contactForm} action={sendEmailAction}>
+            <form className={styles.contactForm} onSubmit={handleSubmit}>
+                {error && (
+                    <Text c="red" mb="sm" align="center">
+                        {error}
+                    </Text>
+                )}
+                {success && (
+                    <Text c="green" mb="sm" align="center">
+                        {success}
+                    </Text>
+                )}
                 <TextInput
                     placeholder="Your Name"
                     name="senderName"
@@ -54,6 +72,7 @@ export default function Contact() {
                     variant="gradient"
                     gradient={{ from: 'pink', to: 'cyan' }}
                     mt="md"
+                    loading={isLoading}
                 >
                     Send Message
                 </Button>

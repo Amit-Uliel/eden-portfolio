@@ -9,11 +9,12 @@ export async function sendEmailAction(formData) {
         const subject = formData.get('subject');
         const message = formData.get('message');
 
+        // Send the email
         await sendMail({ senderName, senderEmail, subject, message });
 
-        return { success: true, message: 'Email sent successfully!' };
+        return { success: true, message: 'Message sent successfully!' };
     } catch (error) {
         console.error('Error sending email:', error);
-        return { success: false, message: 'Failed to send email.' };
+        return { success: false, message: 'Failed to send message.' };
     }
 }
