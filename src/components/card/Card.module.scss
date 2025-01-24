@@ -1,0 +1,101 @@
+.card {
+    height: 440px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-size: cover;
+    background-position: center;
+
+    .title {
+        font-weight: 900;
+        color: var(--mantine-color-white);
+        line-height: 1.2;
+        font-size: 32px;
+        margin-top: var(--mantine-spacing-xs);
+        cursor: default;
+    }
+
+    .description {
+        color: var(--mantine-color-white);
+        opacity: 0.7;
+        font-weight: 700;
+        text-transform: uppercase;
+        cursor: default;
+    }
+}
+
+.modalHeader {
+    backdrop-filter: blur(5px);
+    background-color: transparent;
+    position: absolute;
+    width: 100%;
+    color: white;
+
+    .modalClose {
+        color: #acb5bd;
+        border: 1px solid transparent;
+        transition: border 0.2s ease-out;
+        &:hover {
+            background-color: transparent;
+            border: 1px solid #acb5bd;
+        }
+    }
+}
+
+.modalBody {
+    background: linear-gradient(130deg, #343434, #1a1a1a);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: auto;
+
+    .modalImage {
+        margin: 0 auto;
+        height: 100%;
+        width: auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .modalContent {
+        margin: 0 auto;
+        max-width: 960px;
+        gap: 20px;
+
+        @media (max-width: 700px) {
+            flex-direction: column;
+            gap: 0;
+        }
+
+        .modalDescription {
+            flex: 0 0 80%;
+
+            @media (max-width: 700px) {
+                flex: 0 0 70%;
+            }
+        }
+
+        .modalSoftwares {
+            display: flex;
+            gap: 30px;
+            padding-bottom: 20px;
+
+            @media (max-width: 700px) {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .softwares {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 10px;
+
+                @media (max-width: 700px) {
+                    align-items: center;
+                }
+            }
+        }
+    }
+}

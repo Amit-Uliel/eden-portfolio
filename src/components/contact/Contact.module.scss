@@ -1,0 +1,71 @@
+.contact {
+
+    .contactForm {
+        max-width: 600px;
+        margin: 0 auto;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .inputField {
+            label {
+                color: #fff;
+            }
+
+            input {
+                color: #fff;
+                background-color: transparent;
+                border: 1px solid #acb5bd30;
+                transition: border 0.2s ease-out;
+
+                &:focus {
+                    border: 1px solid #acb5bd50;
+                }
+            }
+        }
+
+        .textArea {
+            label {
+                color: #fff;
+            }
+            
+            textarea {
+                color: #fff;
+                background-color: transparent;
+                border: 1px solid #acb5bd30;
+                transition: border 0.2s ease-out;
+
+                &:focus {
+                    border: 1px solid #acb5bd50;
+                }
+            }
+        }
+    }
+
+    .social {
+        a {
+            color: #d35186;
+            transition: color 0.2s;
+
+            &:hover {
+                color: #fff;
+            }
+        }
+
+        .socialLinks {
+            margin-left: 10px;
+        }
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+
+            .socialLinks {
+                margin-left: 0;
+            }
+        }
+    }
+}

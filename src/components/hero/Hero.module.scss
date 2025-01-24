@@ -1,0 +1,47 @@
+.hero {
+    background-color: #f5f5f5;
+    padding: 50px 50px 30px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: -2;
+
+    .upperFlexContainer {
+        flex-direction: column;
+
+        @media (max-width: 450px) {
+            .nameTitle {
+                font-size: 1rem;
+            }
+            .mainTitle {
+                font-size: 1.5rem;
+            }
+        }
+
+        .gradientText {
+            display: inline-flex;
+            align-items: center;
+            position: relative;
+
+            .iconBulb {
+                width: 1.2em;
+                height: 1.2em;
+                margin-left: 4px;
+                stroke-width: 1.5;
+                color: #5db1d2;
+            }
+        }
+    }
+
+    .titleEndText {
+        text-align: center;
+        .treeIcon {
+            transform: translateY(-2px);
+            margin-left: 4px;
+            color: #d35186;
+            vertical-align: middle;
+        }
+    }
+}

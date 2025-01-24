@@ -1,0 +1,23 @@
+.skillsAndExpertise {
+    h2 {
+        margin-bottom: 20px;
+    }
+    
+    .card {
+        background-color: transparent;
+        border: 1px solid #acb5bd;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: box-shadow .2s ease-out;
+        
+        &:hover {
+            box-shadow: 0 4px 10px #111111;
+        }
+
+        .icon {
+            color: white;
+        }
+    }
+}

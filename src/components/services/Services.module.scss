@@ -1,0 +1,18 @@
+.services {
+    h2 {
+        margin-bottom: 20px;
+    }
+
+    .card {
+        background-color: transparent;
+        text-align: center;
+        border: 1px solid #ACB5BD;
+        box-shadow: none;
+        border-radius: 20px;
+        height: 100%;
+
+        .icon {
+            margin: 0 auto;
+        }
+    }
+}
