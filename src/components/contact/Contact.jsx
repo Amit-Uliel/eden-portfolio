@@ -11,6 +11,7 @@ import {
 } from '@mantine/core';
 import styles from './Contact.module.scss';
 import { useSendEmail } from '@/hooks/useSendEmail';
+import { RiChatSmile3Fill } from "react-icons/ri";
 
 export default function Contact() {
     const { sendEmail, isLoading, error, success } = useSendEmail();
@@ -23,8 +24,9 @@ export default function Contact() {
 
     return (
         <Container className={styles.contact}>
-            <Title order={2} align="center" c="gray.2">
+            <Title className={styles.title} order={2} align="center" c="gray.2">
                 Let's Get In Touch
+                <RiChatSmile3Fill className={styles.smileyIcon}/>
             </Title>
             <form className={styles.contactForm} onSubmit={handleSubmit}>
                 {error && (

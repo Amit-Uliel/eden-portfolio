@@ -6,6 +6,7 @@ import {
     SiAdobeillustrator,
     SiAdobeindesign,
     SiRhinoceros,
+    SiTwinmotion,
 } from 'react-icons/si';
 import { FaMicrosoft } from 'react-icons/fa';
 
@@ -17,6 +18,7 @@ const skills = [
     { skillName: 'Illustrator', icon: SiAdobeillustrator },
     { skillName: 'InDesign', icon: SiAdobeindesign },
     { skillName: 'Microsoft Office', icon: FaMicrosoft },
+    { skillName: 'TwinMotion', icon: SiTwinmotion},
     { skillName: 'Rhino', icon: SiRhinoceros },
 ];
 

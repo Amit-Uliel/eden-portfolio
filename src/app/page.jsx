@@ -6,6 +6,7 @@ import SkillsAndExpertise from '@/components/skillsAndExpertise/SkillsAndExperti
 import Services from '@/components/services/Services';
 import Contact from '@/components/contact/Contact';
 import { Divider } from '@mantine/core';
+import Experience from '@/components/experience/Experience';
 
 export default function Home() {
     return (
@@ -18,6 +19,9 @@ export default function Home() {
             </section>
             <section className={styles.section}>
                 <About />
+            </section>
+            <section className={styles.section}>
+                <Experience />
             </section>
             <section className={styles.section}>
                 <SkillsAndExpertise />

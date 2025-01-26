@@ -5,23 +5,10 @@
 }
 
 body {
-    background: hsla(0, 0%, 20%, 1);
-
-    background: radial-gradient(
-        circle,
-        hsla(0, 0%, 20%, 1) 0%,
-        hsla(0, 0%, 10%, 1) 100%
-    );
-
-    background: -moz-radial-gradient(
-        circle,
-        hsla(0, 0%, 20%, 1) 0%,
-        hsla(0, 0%, 10%, 1) 100%
-    );
-
-    background: -webkit-radial-gradient(
-        circle,
-        hsla(0, 0%, 20%, 1) 0%,
-        hsla(0, 0%, 10%, 1) 100%
-    );
+    background:
+        radial-gradient(circle, #444 1px, transparent 1px) repeat,
+        radial-gradient(circle, #222, #111);
+    background-size:
+        30px 30px,
+        100% 100%;
 }

@@ -1,5 +1,12 @@
 .contact {
-
+    .title {
+        position: relative;
+        .smileyIcon {
+            position: absolute;
+            bottom: calc(100% - 10px);
+            transform: translateX(4px);
+        }
+    }
     .contactForm {
         max-width: 600px;
         margin: 0 auto;
@@ -15,7 +22,7 @@
 
             input {
                 color: #fff;
-                background-color: transparent;
+                background-color: #1d1d1d;
                 border: 1px solid #acb5bd30;
                 transition: border 0.2s ease-out;
 
@@ -32,7 +39,7 @@
             
             textarea {
                 color: #fff;
-                background-color: transparent;
+                background-color: #1d1d1d;
                 border: 1px solid #acb5bd30;
                 transition: border 0.2s ease-out;
 
