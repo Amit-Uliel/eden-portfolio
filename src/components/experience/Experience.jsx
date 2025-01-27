@@ -1,9 +1,13 @@
+'use client';
+
 import { Container, Title, Text, Flex } from '@mantine/core';
 import styles from './Experience.module.scss';
 import { IoPin } from 'react-icons/io5';
 import experiences from '@/data/experiences';
+import { useMediaQuery } from '@mantine/hooks';
 
 export default function Experience() {
+    const isMobile768 = useMediaQuery('(max-width: 768px)');
     return (
         <Container className={styles.experience}>
             <Title order={2} align="center" mb="xl" c="gray.2">
@@ -15,7 +19,13 @@ export default function Experience() {
                         key={index}
                         className={styles.timelineItem}
                         direction="column"
-                        align={index % 2 === 0 ? 'flex-start' : 'flex-end'}
+                        align={
+                            isMobile768
+                                ? 'center'
+                                : index % 2 === 0
+                                  ? 'flex-start'
+                                  : 'flex-end'
+                        }
                     >
                         <div className={styles.milestoneIcon} />
                         <div className={styles.content}>
