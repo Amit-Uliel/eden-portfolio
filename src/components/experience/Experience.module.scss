@@ -25,7 +25,7 @@
         .timelineItem {
             position: relative;
 
-            .milestoneIcon {
+            .milestone {
                 position: absolute;
                 left: 50%;
                 transform: translateX(-50%);
@@ -46,9 +46,10 @@
                 background: #1a1a1a;
                 color: white;
                 padding: 10px 20px;
+                border: 1px solid #222;
                 border-radius: 8px;
-                box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
-                max-width: 40%;
+                box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+                max-width: calc(40% + 20px);
 
                 @media (max-width: 768px) {
                     max-width: 100%;

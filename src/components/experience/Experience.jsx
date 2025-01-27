@@ -27,7 +27,7 @@ export default function Experience() {
                                   : 'flex-end'
                         }
                     >
-                        <div className={styles.milestoneIcon} />
+                        <div className={styles.milestone} />
                         <div className={styles.content}>
                             <IoPin className={styles.pinIcon} />
                             <Text weight={600}>{exp.title}</Text>
