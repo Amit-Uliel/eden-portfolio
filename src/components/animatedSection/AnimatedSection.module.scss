@@ -1,6 +1,13 @@
 .section {
-    overflow: hidden;
     &:not(:first-of-type) {
+        padding-bottom: 200px;
+    }
+
+    &:nth-last-of-type(2) {
         padding-bottom: 100px;
+    }
+
+    &:last-of-type {
+        padding-bottom: 50px;
     }
 }
