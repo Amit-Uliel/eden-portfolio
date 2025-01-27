@@ -7,32 +7,33 @@ import Services from '@/components/services/Services';
 import Contact from '@/components/contact/Contact';
 import { Divider } from '@mantine/core';
 import Experience from '@/components/experience/Experience';
+import AnimatedSection from '@/components/animatedSection/AnimatedSection';
 
 export default function Home() {
     return (
         <>
-            <section className={styles.section}>
+            <AnimatedSection className={styles.section}>
                 <Hero />
-            </section>
-            <section className={styles.section}>
+            </AnimatedSection>
+            <AnimatedSection className={styles.section}>
                 <ProjectsShowcase />
-            </section>
-            <section className={styles.section}>
+            </AnimatedSection>
+            <AnimatedSection className={styles.section}>
                 <About />
-            </section>
-            <section className={styles.section}>
+            </AnimatedSection>
+            <AnimatedSection className={styles.section}>
                 <Experience />
-            </section>
-            <section className={styles.section}>
+            </AnimatedSection>
+            <AnimatedSection className={styles.section}>
                 <SkillsAndExpertise />
-            </section>
-            <section className={styles.section}>
+            </AnimatedSection>
+            <AnimatedSection className={styles.section}>
                 <Services />
-            </section>
+            </AnimatedSection>
             <Divider className={styles.divider} mx="auto" w="50%" />
-            <section className={styles.section}>
+            <AnimatedSection className={styles.section}>
                 <Contact />
-            </section>
+            </AnimatedSection>
         </>
     );
 }

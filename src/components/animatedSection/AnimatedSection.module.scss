@@ -1,0 +1,6 @@
+.section {
+    overflow: hidden;
+    &:not(:first-of-type) {
+        padding-bottom: 100px;
+    }
+}
