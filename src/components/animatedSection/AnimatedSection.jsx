@@ -3,14 +3,14 @@
 import { motion } from 'motion/react';
 import styles from './AnimatedSection.module.scss';
 
-export default function AnimatedSection({ children }) {
+export default function AnimatedSection({ children, className }) {
     const sectionVariants = {
         hidden: { opacity: 0, y: 50 },
         visible: { opacity: 1, y: 0 },
     };
 
     return (
-        <section className={styles.section}>
+        <section className={className}>
             <motion.div
                 initial="hidden"
                 whileInView="visible"

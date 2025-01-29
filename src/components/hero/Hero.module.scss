@@ -1,12 +1,4 @@
 .hero {
-    display: flex;
-    height: 100vh;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    z-index: 1;
-
     .upperFlexContainer {
         flex-direction: column;
 
@@ -36,6 +28,7 @@
 
     .titleEndText {
         text-align: center;
+        
         .treeIcon {
             transform: translateY(-2px);
             margin-left: 4px;
