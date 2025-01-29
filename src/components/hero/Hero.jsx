@@ -7,10 +7,10 @@ export default function Hero() {
     return (
         <Container className={styles.hero} fluid>
             <Flex className={styles.upperFlexContainer}>
-                <Title className={styles.nameTitle} order={2} c="gray.5">
+                <Title className={styles.nameTitle} order={2} c="gray.2">
                     Hi, I’m Eden,
                 </Title>
-                <Title className={styles.mainTitle} order={1} c="gray.5">
+                <Title className={styles.mainTitle} order={1} c="gray.2">
                     I’m an aspiring <strong>architect</strong>,&nbsp;
                     <Text
                         span
@@ -26,7 +26,7 @@ export default function Hero() {
                 </Title>
                 <Divider my="lg" color="gray.5" w="50%" mx="auto" />
             </Flex>
-            <Title order={5} className={styles.titleEndText} c="gray.5">
+            <Title order={5} className={styles.titleEndText} c="gray.4">
                 Explore my projects to see how I bring ideas to life
                 <PiTreeLight className={styles.treeIcon} size={25} />.
             </Title>
